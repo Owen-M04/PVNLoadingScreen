@@ -28,7 +28,7 @@ body {
     background: linear-gradient(135deg, #161616, #474545, #5f6061);
     background-size: 300% 300%;
     animation: bgMove 30s ease infinite;
-    color: #222;
+    color: #ffffff;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,7 +47,9 @@ body {
     width: 200px;
     max-width: 80%;
     margin-bottom: 20px;
-    border-radius: 50%;
+    border-radius: 40%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 5px #000;
     animation: fadeIn 2s ease forwards, spinSlow 60s linear infinite;
     transform-origin: center;
 }
@@ -61,7 +63,7 @@ body {
 .title h2 {
     font-size: 1.2em;
     margin-top: 10px;
-    color: #444;
+    color: #ffffff;
     animation: fadeIn 2.5s ease-out forwards;
 }
 
