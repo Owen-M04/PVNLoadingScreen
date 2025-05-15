@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #b5d7f2, #e6f2fa, #cde9ff);
+    background: linear-gradient(135deg, #161616, #474545, #5f6061);
     background-size: 300% 300%;
     animation: bgMove 30s ease infinite;
     color: #222;
@@ -47,6 +47,7 @@ body {
     width: 200px;
     max-width: 80%;
     margin-bottom: 20px;
+    border-radius: 50%;
     animation: fadeIn 2s ease forwards, spinSlow 60s linear infinite;
     transform-origin: center;
 }
