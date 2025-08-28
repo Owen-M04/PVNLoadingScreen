@@ -20,9 +20,10 @@
         <p><strong>Notice:</strong> For a smoother experience, please use the x86-64 version of Garry's Mod.</p>
     </div>
 
-    <audio src="/audio/loadingscreen.mp3" type="audio/mpeg"></audio>
+    <audio id="bgm" autoplay loop preload="auto" style="display:none;">
+        <source src="audio/loadingscreen.mp3" type="audio/mpeg">
+    </audio>
     <script>
-    // Gentle default volume
         document.addEventListener('DOMContentLoaded', function () {
             const audio = document.getElementById('bgm');
             if (audio) audio.volume = 0.35;
