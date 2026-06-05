@@ -4,15 +4,15 @@
    ============================================= */
 
 :root {
-    --gold:        #c9a84c;
-    --gold-light:  #e8c96f;
-    --gold-dark:   #8a6a22;
+    --gold:        #2a9d9d;
+    --gold-light:  #3dbfbf;
+    --gold-dark:   #1a6b6b;
     --dark-bg:     #0e0d0b;
     --dark-mid:    #161410;
     --dark-light:  #1f1c17;
-    --text-main:   #e8dfc8;
-    --text-muted:  #8a806a;
-    --border:      rgba(201, 168, 76, 0.25);
+    --text-main:   #ffffff;
+    --text-muted:  #9ab8b8;
+    --border:      rgba(42, 157, 157, 0.28);
 }
 
 /* ---- Reset & base ---- */
@@ -79,7 +79,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 30px;
     animation: fadeInUp 1.6s ease-out forwards;
     opacity: 0;
     padding: 0 20px;
@@ -91,27 +91,21 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
 .logo-ring {
-    position: absolute;
-    width: 230px; height: 230px;
-    border-radius: 50%;
-    border: 1px solid var(--border);
-    box-shadow:
-        0 0 20px rgba(201, 168, 76, 0.12),
-        inset 0 0 20px rgba(201, 168, 76, 0.06);
-    animation: ringPulse 4s ease-in-out infinite, floatUpDown 5s ease-in-out infinite;
+    display: none;
 }
 
 .logo img {
-    width: 190px;
+    width: 200px;
     max-width: 80%;
-    border-radius: 50%;
-    opacity: 0.92;
+    border-radius: 20%;
+    opacity: 0.9;
     box-shadow:
-        0 0 30px rgba(201, 168, 76, 0.25),
-        0 0 80px rgba(0,0,0,0.8);
+        0 0 20px rgba(42, 157, 157, 0.2),
+        0 0 60px rgba(0,0,0,0.8);
     animation: floatUpDown 5s ease-in-out infinite;
     position: relative;
     z-index: 1;
@@ -124,8 +118,8 @@ body {
     font-size: 2.6em;
     margin: 0;
     letter-spacing: 0.08em;
-    color: var(--gold-light);
-    text-shadow: 0 0 40px rgba(201, 168, 76, 0.4), 0 2px 4px rgba(0,0,0,0.8);
+    color: #ffffff;
+    text-shadow: 0 0 40px rgba(42, 157, 157, 0.35), 0 2px 4px rgba(0,0,0,0.8);
     animation: titleGlow 5s ease-in-out infinite;
 }
 
@@ -178,7 +172,7 @@ body {
     height: 6px;
     background: rgba(255,255,255,0.07);
     border-radius: 3px;
-    border: 1px solid rgba(201, 168, 76, 0.15);
+    border: 1px solid rgba(42, 157, 157, 0.18);
     overflow: hidden;
 }
 
@@ -187,7 +181,7 @@ body {
     width: 0%;
     border-radius: 3px;
     background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
-    box-shadow: 0 0 10px rgba(201, 168, 76, 0.6);
+    box-shadow: 0 0 10px rgba(42, 157, 157, 0.6);
     transition: width 0.4s ease;
 }
 
@@ -226,7 +220,7 @@ body {
     color: var(--gold);
     flex-shrink: 0;
     margin-top: 2px;
-    text-shadow: 0 0 8px rgba(201, 168, 76, 0.5);
+    text-shadow: 0 0 8px rgba(42, 157, 157, 0.5);
 }
 
 .tip-text {
@@ -315,13 +309,13 @@ body {
 }
 
 @keyframes ringPulse {
-    0%, 100% { box-shadow: 0 0 20px rgba(201,168,76,0.12), inset 0 0 20px rgba(201,168,76,0.06); }
-    50%       { box-shadow: 0 0 38px rgba(201,168,76,0.22), inset 0 0 30px rgba(201,168,76,0.1); }
+    0%, 100% { box-shadow: 0 0 20px rgba(42,157,157,0.12), inset 0 0 20px rgba(42,157,157,0.06); }
+    50%       { box-shadow: 0 0 38px rgba(42,157,157,0.22), inset 0 0 30px rgba(42,157,157,0.1); }
 }
 
 @keyframes titleGlow {
-    0%, 100% { text-shadow: 0 0 40px rgba(201,168,76,0.4), 0 2px 4px rgba(0,0,0,0.8); }
-    50%       { text-shadow: 0 0 60px rgba(201,168,76,0.65), 0 2px 4px rgba(0,0,0,0.8); }
+    0%, 100% { text-shadow: 0 0 40px rgba(42,157,157,0.35), 0 2px 4px rgba(0,0,0,0.8); }
+    50%       { text-shadow: 0 0 60px rgba(42,157,157,0.55), 0 2px 4px rgba(0,0,0,0.8); }
 }
 
 @keyframes shine {

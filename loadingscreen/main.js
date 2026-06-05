@@ -29,16 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ---- Tips ----
 const TIPS = [
-    "Use /advert in-game to broadcast announcements to all players on the server.",
+    "Use /advert in-game to broadcast advertisements to all players on the server.",
     "Respect the chain of command — address superior officers by their correct rank at all times.",
-    "The x86-64 version of Garry's Mod offers better performance and fewer crashes.",
-    "Need help? Type !menu in-game to access the player help panel.",
+    "Need help? Use @ in your chat to contact staff.",
     "Stay in character during RP scenarios — breaking character may result in a warn.",
     "Check the Discord for the latest server announcements and update logs.",
-    "Faction leaders can issue wartime orders through the /order command.",
     "New to Imperial Germany RP? Speak to a staff member for an orientation.",
-    "Keep your microphone push-to-talk to maintain immersion for other players.",
-    "Prop surfing and spawn killing are strictly prohibited — read the rules before playing.",
+    "Read the rules before playing!",
+    "Join a faction and support the empire.",
 ];
 
 let tipIndex = Math.floor(Math.random() * TIPS.length);
@@ -107,10 +105,10 @@ setTimeout(advanceBar, 800); // Short pause before first tick
     // Particle config
     const COUNT = 90;
     const GOLD  = [
-        'rgba(201,168,76,',
-        'rgba(232,201,111,',
-        'rgba(138,106,34,',
-        'rgba(255,220,120,',
+        'rgba(42,157,157,',
+        'rgba(61,191,191,',
+        'rgba(26,107,107,',
+        'rgba(100,210,210,',
     ];
 
     const particles = Array.from({ length: COUNT }, () => spawnParticle(true));
