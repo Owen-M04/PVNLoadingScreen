@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Partum Verse Networks - Loading</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Animated particle canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Vignette overlay -->
+    <div class="vignette"></div>
+
+    <!-- Decorative corner lines -->
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <!-- Main content -->
     <div class="container">
         <div class="logo">
+            <div class="logo-ring"></div>
             <img src="logo.png" alt="Partum Verse Networks Logo">
         </div>
+
         <div class="title">
             <h1>Partum Verse Networks</h1>
+            <div class="divider"><span></span><div class="diamond"></div><span></span></div>
             <h2>WW2 Imperial Germany Roleplay</h2>
+        </div>
+
+        <!-- Loading bar -->
+        <div class="loading-section">
+            <div class="loading-bar-wrap">
+                <div class="loading-bar-track">
+                    <div class="loading-bar-fill" id="loadingBar"></div>
+                    <div class="loading-bar-shine"></div>
+                </div>
+                <div class="loading-label" id="loadingLabel">Connecting to server...</div>
+            </div>
+        </div>
+
+        <!-- Tip box -->
+        <div class="tip-box" id="tipBox">
+            <div class="tip-icon">⚔</div>
+            <p class="tip-text" id="tipText"></p>
         </div>
     </div>
 
+    <!-- Bottom notice -->
     <div class="notice">
-        <p><strong>Notice:</strong> For a smoother experience, please use the x86-64 version of Garry's Mod.</p>
+        <strong>Notice:</strong> For a smoother experience, please use the x86-64 version of Garry's Mod.
+    </div>
+
+    <!-- Volume control -->
+    <div class="audio-control" id="audioControl" title="Toggle music">
+        <span id="audioIcon">♪</span>
+        <input type="range" id="volumeSlider" min="0" max="100" value="15" title="Volume">
     </div>
 
     <audio id="bgm" autoplay loop preload="auto" style="display:none;">
         <source src="audio/loadingscreen.mp3" type="audio/mpeg">
     </audio>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const audio = document.getElementById('bgm');
-            if (audio) audio.volume = 0.05;
-        });
-    </script>
+
+    <script src="main.js"></script>
 </body>
 </html>
-
